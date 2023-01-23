@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Teste caixa de diálogo</title>
+    <style>
+        div#personagem{
+            background-color: green;
+            height: 250px;
+            width: 250px;
+        }
+
+        p{
+            font-size: 5em;
+            color: black;
+        }
+    </style>
+</head>
+<body>
+    <div id="personagem" onclick="clicar()">Olá</div> <br>
+    <p id="fala"></p>
+
+    <script>
+        let fala = document.getElementById('fala')
+
+        function clicar(){
+            fala.innerText = 'Olá! Seja Bem-Vindo'
+        }
+    </script>
+</body>
+</html>
