@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Desafio 4</title>
+    <style>
+        input{
+            font-size: 1.3em;
+            width: 210px;
+            height: 55px;
+        }
+    </style>
+</head>
+<body>
+    <h1>
+        Calculando o troco
+    </h1>
+
+    <input type="button" value="Comprar Produto" onclick="comprar()">
+
+    <script>
+        function comprar(){
+            let produto = prompt('Que produto você está comprando?')
+            let preço = Number(prompt(`Quanto custa o ${produto} que você está comprando?`))
+            let pagamento = Number(prompt(`Qual foi o valor que você deu para pagar ${produto}?`))
+            alert(`Você comprou ${produto} que custou R$ ${preço}. Deu R$ ${preço} em dinheiro e vai receber R$ ${pagamento - preço} de volta! Volte sempre!`)
+        }
+    </script>
+</body>
+</html>

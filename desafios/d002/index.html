@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Desafio 002</title>
+    <style>
+        input{
+            font-size: 1.3em;
+            width: 160px;
+            height: 40px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Desafio de Boas Vindas</h1>
+    <input type="button" value="Inicie o Desafio" onclick="iniciar()">
+
+    <script>
+        function iniciar(){
+            let nome = prompt('Qual é seu nome?')
+            let idade = prompt(`Olá ${nome}! Quantos anos você tem?`)
+            alert(`Acabei de conhecer ${nome}, que tem ${idade} anos de idade!`)
+        }
+    </script>
+</body>
+</html>
